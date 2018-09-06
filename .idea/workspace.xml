@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e78a29db-64de-4f99-9fa6-79d40ba7e474" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ElmWorkspace">
+    <elmProjects />
+    <settings binDirPath="" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1551799524">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="iml" value="2" />
+          <entry key="rs" value="7" />
+          <entry key="toml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="IDEA_MODULE" value="2" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Rust" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="rs" value="312" />
+          <entry key="toml" value="26" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="26" />
+          <entry key="Rust" value="312" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.spring.boot.run.usages" />
+      <usages-collector id="statistics.go.postfix.template.usages.trigger" />
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main.rs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="56" column="71" selection-start-line="56" selection-start-column="71" selection-end-line="56" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.rustup/toolchains/1.28.0-x86_64-apple-darwin/lib/rustlib/src/rust/src/libcore/result.rs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="255" column="9" selection-start-line="255" selection-start-column="9" selection-end-line="255" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.26/src/value/mod.rs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="321">
+              <caret line="1120" column="7" selection-start-line="1120" selection-start-column="7" selection-end-line="1120" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.76/src/de/mod.rs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="1847" column="7" selection-start-line="1847" selection-start-column="7" selection-end-line="1847" selection-end-column="7" />
+              <folding>
+                <element signature="e#339#4281#0" />
+                <element signature="n#value#0" />
+                <element signature="e#4672#5768#0" />
+                <element signature="e#5838#6941#0" />
+                <element signature="e#7042#7770#0" />
+                <element signature="e#7980#8738#0" />
+                <element signature="e#8950#9455#0" />
+                <element signature="e#9659#9762#0" />
+                <element signature="e#10351#10454#0" />
+                <element signature="e#11029#11209#0" />
+                <element signature="e#11390#11491#0" />
+                <element signature="n#!!doc;n#Unexpected#0" />
+                <element signature="n#!!block;n#Unexpected#0" />
+                <element signature="n#!!doc;n#Bool#0;n#!!block;n#Unexpected#0" />
+                <element signature="n#!!doc;n#Unsigned#0;n#!!block;n#Unexpected#0" />
+                <element signature="n#!!doc;n#Signed#0;n#!!block;n#Unexpected#0" />
+                <element signature="n#!!doc;n#Float#0;n#!!block;n#Unexpected#0" />
+                <element signature="n#!!doc;n#Char#0;n#!!block;n#Unexpected#0" />
+                <element signature="n#!!doc;n#Str#0;n#!!block;n#Unexpected#0" />
+                <element signature="n#!!doc;n#Bytes#0;n#!!block;n#Unexpected#0" />
+                <element signature="n#!!doc;n#Unit#0;n#!!block;n#Unexpected#0" />
+                <element signature="n#!!doc;n#Option#0;n#!!block;n#Unexpected#0" />
+                <element signature="n#!!doc;n#NewtypeStruct#0;n#!!block;n#Unexpected#0" />
+                <element signature="n#!!doc;n#Seq#0;n#!!block;n#Unexpected#0" />
+                <element signature="n#!!doc;n#Map#0;n#!!block;n#Unexpected#0" />
+                <element signature="n#!!doc;n#Enum#0;n#!!block;n#Unexpected#0" />
+                <element signature="n#!!doc;n#UnitVariant#0;n#!!block;n#Unexpected#0" />
+                <element signature="n#!!doc;n#NewtypeVariant#0;n#!!block;n#Unexpected#0" />
+                <element signature="n#!!doc;n#TupleVariant#0;n#!!block;n#Unexpected#0" />
+                <element signature="n#!!doc;n#StructVariant#0;n#!!block;n#Unexpected#0" />
+                <element signature="n#!!doc;n#Other#0;n#!!block;n#Unexpected#0" />
+                <element signature="e#14532#15755#0" />
+                <element signature="e#14544#14583#0" />
+                <element signature="e#14610#15753#0" />
+                <element signature="e#14665#15747#0" />
+                <element signature="n#!!doc;n#Expected#0" />
+                <element signature="n#!!block;n#Expected#0" />
+                <element signature="n#!!doc;n#fmt#0;n#!!block;n#Expected#0" />
+                <element signature="e#17425#17464#0" />
+                <element signature="e#17539#17649#0" />
+                <element signature="e#17551#17590#0" />
+                <element signature="e#17681#17791#0" />
+                <element signature="e#17693#17732#0" />
+                <element signature="e#17828#17943#0" />
+                <element signature="e#17840#17879#0" />
+                <element signature="n#!!doc;n#Deserialize#0" />
+                <element signature="n#!!block;n#Deserialize#0" />
+                <element signature="n#!!doc;n#deserialize#0;n#!!block;n#Deserialize#0" />
+                <element signature="e#19930#19947#0" />
+                <element signature="n#!!doc;n#deserialize_in_place#0;n#!!block;n#Deserialize#0" />
+                <element signature="e#21063#21098#0" />
+                <element signature="n#!!block;n#deserialize_in_place#0;n#!!block;n#Deserialize#0" />
+                <element signature="n#!!doc;n#DeserializeOwned#0" />
+                <element signature="n#!!block;n#DeserializeOwned#0" />
+                <element signature="e#22411#22413#0" />
+                <element signature="n#!!doc;n#DeserializeSeed#0" />
+                <element signature="n#!!block;n#DeserializeSeed#0" />
+                <element signature="n#!!doc;n#Value#0;n#!!block;n#DeserializeSeed#0" />
+                <element signature="n#!!doc;n#deserialize#0;n#!!block;n#DeserializeSeed#0" />
+                <element signature="e#28366#28389#0" />
+                <element signature="e#28550#28745#0" />
+                <element signature="e#28608#28631#0" />
+                <element signature="n#!!doc;n#Deserializer#0" />
+                <element signature="n#!!doc;n#Error#0;n#!!block;n#Deserializer#0" />
+                <element signature="n#!!doc;n#deserialize_any#0;n#!!block;n#Deserializer#0" />
+                <element signature="e#34610#34628#0" />
+                <element signature="n#!!doc;n#deserialize_bool#0;n#!!block;n#Deserializer#0" />
+                <element signature="e#34794#34812#0" />
+                <element signature="n#!!doc;n#deserialize_i8#0;n#!!block;n#Deserializer#0" />
+                <element signature="e#34975#34993#0" />
+                <element signature="n#!!doc;n#deserialize_i16#0;n#!!block;n#Deserializer#0" />
+                <element signature="e#35158#35176#0" />
+                <element signature="n#!!doc;n#deserialize_i32#0;n#!!block;n#Deserializer#0" />
+                <element signature="e#35341#35359#0" />
+                <element signature="n#!!doc;n#deserialize_i64#0;n#!!block;n#Deserializer#0" />
+                <element signature="e#35524#35542#0" />
+                <element signature="e#35637#36103#0" />
+                <element signature="e#35647#35868#0" />
+                <element signature="n#!!doc;n#deserialize_u8#0;n#!!block;n#Deserializer#0" />
+                <element signature="e#36197#36215#0" />
+                <element signature="n#!!doc;n#deserialize_u16#0;n#!!block;n#Deserializer#0" />
+                <element signature="e#36379#36397#0" />
+                <element signature="n#!!doc;n#deserialize_u32#0;n#!!block;n#Deserializer#0" />
+                <element signature="e#36561#36579#0" />
+                <element signature="n#!!doc;n#deserialize_u64#0;n#!!block;n#Deserializer#0" />
+                <element signature="e#36743#36761#0" />
+                <element signature="e#36856#37322#0" />
+                <element signature="e#36866#37087#0" />
+                <element signature="n#!!doc;n#deserialize_f32#0;n#!!block;n#Deserializer#0" />
+                <element signature="e#37418#37436#0" />
+                <element signature="n#!!doc;n#deserialize_f64#0;n#!!block;n#Deserializer#0" />
+                <element signature="e#37600#37618#0" />
+                <element signature="n#!!doc;n#deserialize_char#0;n#!!block;n#Deserializer#0" />
+                <element signature="e#37784#37802#0" />
+                <element signature="n#!!doc;n#deserialize_str#0;n#!!block;n#Deserializer#0" />
+                <element signature="e#38250#38268#0" />
+                <element signature="n#!!doc;n#deserialize_string#0;n#!!block;n#Deserializer#0" />
+                <element signature="e#38716#38734#0" />
+                <element signature="n#!!doc;n#deserialize_bytes#0;n#!!block;n#Deserializer#0" />
+                <element signature="e#39184#39202#0" />
+                <element signature="n#!!doc;n#deserialize_byte_buf#0;n#!!block;n#Deserializer#0" />
+                <element signature="e#39653#39671#0" />
+                <element signature="n#!!doc;n#deserialize_option#0;n#!!block;n#Deserializer#0" />
+                <element signature="e#40028#40046#0" />
+                <element signature="n#!!doc;n#deserialize_unit#0;n#!!block;n#Deserializer#0" />
+                <element signature="e#40210#40228#0" />
+                <element signature="n#!!doc;n#deserialize_unit_struct#0;n#!!block;n#Deserializer#0" />
+                <element signature="e#40431#40500#0" />
+                <element signature="n#!!doc;n#deserialize_newtype_struct#0;n#!!block;n#Deserializer#0" />
+                <element signature="e#40709#40778#0" />
+                <element signature="n#!!doc;n#deserialize_seq#0;n#!!block;n#Deserializer#0" />
+                <element signature="e#40949#40967#0" />
+                <element signature="n#!!doc;n#deserialize_tuple#0;n#!!block;n#Deserializer#0" />
+                <element signature="e#41223#41253#0" />
+                <element signature="n#!!doc;n#deserialize_tuple_struct#0;n#!!block;n#Deserializer#0" />
+                <element signature="e#41479#41568#0" />
+                <element signature="e#41743#41761#0" />
+                <element signature="n#!!doc;n#deserialize_enum#0;n#!!block;n#Deserializer#0" />
+                <element signature="e#42293#42405#0" />
+                <element signature="n#!!doc;n#deserialize_identifier#0;n#!!block;n#Deserializer#0" />
+                <element signature="n#!!doc;n#deserialize_ignored_any#0;n#!!block;n#Deserializer#0" />
+                <element signature="e#42973#42991#0" />
+                <element signature="n#!!doc;n#is_human_readable#0;n#!!block;n#Deserializer#0" />
+                <element signature="n#!!doc;n#Visitor#0" />
+                <element signature="n#!!block;n#Visitor#0" />
+                <element signature="n#!!doc;n#Value#0;n#!!block;n#Visitor#0" />
+                <element signature="n#!!doc;n#expecting#0;n#!!block;n#Visitor#0" />
+                <element signature="e#47942#47981#0" />
+                <element signature="n#!!doc;n#visit_bool#0;n#!!block;n#Visitor#0" />
+                <element signature="e#48125#48140#0" />
+                <element signature="n#!!doc;n#visit_i8#0;n#!!block;n#Visitor#0" />
+                <element signature="e#48442#48455#0" />
+                <element signature="n#!!doc;n#visit_i16#0;n#!!block;n#Visitor#0" />
+                <element signature="e#48731#48745#0" />
+                <element signature="n#!!doc;n#visit_i32#0;n#!!block;n#Visitor#0" />
+                <element signature="e#49021#49035#0" />
+                <element signature="n#!!doc;n#visit_i64#0;n#!!block;n#Visitor#0" />
+                <element signature="e#49260#49274#0" />
+                <element signature="e#49430#49846#0" />
+                <element signature="e#49440#49624#0" />
+                <element signature="n#!!doc;n#visit_u8#0;n#!!block;n#Visitor#0" />
+                <element signature="e#50020#50033#0" />
+                <element signature="n#!!doc;n#visit_u16#0;n#!!block;n#Visitor#0" />
+                <element signature="e#50308#50322#0" />
+                <element signature="n#!!doc;n#visit_u32#0;n#!!block;n#Visitor#0" />
+                <element signature="e#50597#50611#0" />
+                <element signature="n#!!doc;n#visit_u64#0;n#!!block;n#Visitor#0" />
+                <element signature="e#50835#50849#0" />
+                <element signature="e#51007#51423#0" />
+                <element signature="e#51017#51201#0" />
+                <element signature="n#!!doc;n#visit_f32#0;n#!!block;n#Visitor#0" />
+                <element signature="e#51600#51614#0" />
+                <element signature="n#!!doc;n#visit_f64#0;n#!!block;n#Visitor#0" />
+                <element signature="e#51839#51853#0" />
+                <element signature="n#!!doc;n#visit_char#0;n#!!block;n#Visitor#0" />
+                <element signature="e#52207#52222#0" />
+                <element signature="n#!!doc;n#visit_str#0;n#!!block;n#Visitor#0" />
+                <element signature="e#53012#53027#0" />
+                <element signature="n#!!doc;n#visit_borrowed_str#0;n#!!block;n#Visitor#0" />
+                <element signature="e#53626#53645#0" />
+                <element signature="n#!!doc;n#visit_string#0;n#!!block;n#Visitor#0" />
+                <element signature="e#54627#54644#0" />
+                <element signature="n#!!doc;n#visit_bytes#0;n#!!block;n#Visitor#0" />
+                <element signature="e#55433#55449#0" />
+                <element signature="n#!!block;n#visit_bytes#0;n#!!block;n#Visitor#0" />
+                <element signature="n#!!doc;n#visit_borrowed_bytes#0;n#!!block;n#Visitor#0" />
+                <element signature="e#56047#56067#0" />
+                <element signature="n#!!doc;n#visit_byte_buf#0;n#!!block;n#Visitor#0" />
+                <element signature="e#57074#57092#0" />
+                <element signature="n#!!doc;n#visit_none#0;n#!!block;n#Visitor#0" />
+                <element signature="n#!!doc;n#visit_some#0;n#!!block;n#Visitor#0" />
+                <element signature="e#57610#57633#0" />
+                <element signature="n#!!block;n#visit_some#0;n#!!block;n#Visitor#0" />
+                <element signature="n#!!doc;n#visit_unit#0;n#!!block;n#Visitor#0" />
+                <element signature="n#!!doc;n#visit_newtype_struct#0;n#!!block;n#Visitor#0" />
+                <element signature="e#58314#58337#0" />
+                <element signature="n#!!block;n#visit_newtype_struct#0;n#!!block;n#Visitor#0" />
+                <element signature="n#!!doc;n#visit_seq#0;n#!!block;n#Visitor#0" />
+                <element signature="e#58659#58673#0" />
+                <element signature="n#!!block;n#visit_seq#0;n#!!block;n#Visitor#0" />
+                <element signature="n#!!doc;n#visit_map#0;n#!!block;n#Visitor#0" />
+                <element signature="e#58966#58980#0" />
+                <element signature="n#!!block;n#visit_map#0;n#!!block;n#Visitor#0" />
+                <element signature="n#!!doc;n#visit_enum#0;n#!!block;n#Visitor#0" />
+                <element signature="e#59266#59281#0" />
+                <element signature="n#!!block;n#visit_enum#0;n#!!block;n#Visitor#0" />
+                <element signature="e#59579#59591#0" />
+                <element signature="n#!!doc;n#SeqAccess#0" />
+                <element signature="n#!!block;n#SeqAccess#0" />
+                <element signature="n#!!doc;n#Error#0;n#!!block;n#SeqAccess#0" />
+                <element signature="n#!!doc;n#next_element_seed#0;n#!!block;n#SeqAccess#0" />
+                <element signature="e#60969#60989#0" />
+                <element signature="n#!!doc;n#next_element#0;n#!!block;n#SeqAccess#0" />
+                <element signature="n#!!doc;n#size_hint#0;n#!!block;n#SeqAccess#0" />
+                <element signature="e#61783#62272#0" />
+                <element signature="e#61854#61874#0" />
+                <element signature="n#!!doc;n#Error#0;n#!!block;n#MapAccess#0" />
+                <element signature="n#!!doc;n#next_key_seed#0;n#!!block;n#MapAccess#0" />
+                <element signature="e#63504#63524#0" />
+                <element signature="n#!!doc;n#next_value_seed#0;n#!!block;n#MapAccess#0" />
+                <element signature="e#63969#63989#0" />
+                <element signature="n#!!doc;n#next_entry_seed#0;n#!!block;n#MapAccess#0" />
+                <element signature="e#64502#64564#0" />
+                <element signature="n#!!block;n#next_entry_seed#0;n#!!block;n#MapAccess#0" />
+                <element signature="e#64746#64930#0" />
+                <element signature="e#64773#64890#1" />
+                <element signature="n#!!doc;n#next_key#0;n#!!block;n#MapAccess#0" />
+                <element signature="n#!!doc;n#next_value#0;n#!!block;n#MapAccess#0" />
+                <element signature="n#!!doc;n#next_entry#0;n#!!block;n#MapAccess#0" />
+                <element signature="n#!!doc;n#size_hint#0;n#!!block;n#MapAccess#0" />
+                <element signature="e#66709#68017#0" />
+                <element signature="e#66776#66796#0" />
+                <element signature="e#66970#66990#0" />
+                <element signature="e#67161#67223#0" />
+                <element signature="n#!!doc;n#EnumAccess#0" />
+                <element signature="n#!!block;n#EnumAccess#0" />
+                <element signature="n#!!doc;n#Error#0;n#!!block;n#EnumAccess#0" />
+                <element signature="n#!!doc;n#Variant#0;n#!!block;n#EnumAccess#0" />
+                <element signature="n#!!doc;n#variant_seed#0;n#!!block;n#EnumAccess#0" />
+                <element signature="e#69396#69411#0" />
+                <element signature="n#!!doc;n#variant#0;n#!!block;n#EnumAccess#0" />
+                <element signature="n#!!doc;n#VariantAccess#0" />
+                <element signature="n#!!block;n#VariantAccess#0" />
+                <element signature="n#!!doc;n#Error#0;n#!!block;n#VariantAccess#0" />
+                <element signature="n#!!doc;n#unit_variant#0;n#!!block;n#VariantAccess#0" />
+                <element signature="n#!!doc;n#newtype_variant_seed#0;n#!!block;n#VariantAccess#0" />
+                <element signature="e#73708#73723#0" />
+                <element signature="n#!!doc;n#newtype_variant#0;n#!!block;n#VariantAccess#0" />
+                <element signature="n#!!doc;n#tuple_variant#0;n#!!block;n#VariantAccess#0" />
+                <element signature="e#75694#75724#0" />
+                <element signature="n#!!doc;n#struct_variant#0;n#!!block;n#VariantAccess#0" />
+                <element signature="e#77295#77377#0" />
+                <element signature="n#!!doc;n#IntoDeserializer#0" />
+                <element signature="n#!!block;n#IntoDeserializer#0" />
+                <element signature="n#!!doc;n#Deserializer#0;n#!!block;n#IntoDeserializer#0" />
+                <element signature="n#!!doc;n#into_deserializer#0;n#!!block;n#IntoDeserializer#0" />
+                <element signature="n#!!doc;n#OneOf#0" />
+                <element signature="n#!!block;n#OneOf#0" />
+                <element signature="e#79073#79742#0" />
+                <element signature="e#79085#79124#0" />
+                <element signature="e#79140#79740#0" />
+                <element signature="e#79173#79734#0" />
+                <element signature="e#79386#79724#1" />
+                <element signature="e#79502#79687#0" />
+                <element signature="e#79533#79611#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>fb visit_</find>
+      <find>fn visit_</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Cargo.toml" />
+        <option value="$PROJECT_DIR$/src/main.rs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="rust_playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rust_playground" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rust_playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rust_playground" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rust_playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="rust_playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="alloc" type="20ee2d1f:SyntheticLibraryElementNode" />
+            </path>
+            <path>
+              <item name="rust_playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="alloc" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="liballoc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rust_playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="core" type="20ee2d1f:SyntheticLibraryElementNode" />
+            </path>
+            <path>
+              <item name="rust_playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="core" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="libcore" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rust_playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="serde" type="20ee2d1f:SyntheticLibraryElementNode" />
+            </path>
+            <path>
+              <item name="rust_playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="serde" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="serde-1.0.76" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rust_playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="serde" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="serde-1.0.76" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rust_playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="serde" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="serde-1.0.76" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="de" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rust_playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="serde_json" type="20ee2d1f:SyntheticLibraryElementNode" />
+            </path>
+            <path>
+              <item name="rust_playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="serde_json" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="serde_json-1.0.26" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rust_playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="serde_json" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="serde_json-1.0.26" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rust_playground" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="serde_json" type="20ee2d1f:SyntheticLibraryElementNode" />
+              <item name="serde_json-1.0.26" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="value" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1536240486774" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e78a29db-64de-4f99-9fa6-79d40ba7e474" name="Default Changelist" comment="" />
+      <created>1536231252340</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1536231252340</updated>
+      <workItem from="1536231257314" duration="4762000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4762000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.14305556" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.27849588" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Cargo" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Cargo.toml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rust_playground.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.76/src/de/mod.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="1847" column="7" selection-start-line="1847" selection-start-column="7" selection-end-line="1847" selection-end-column="7" />
+          <folding>
+            <element signature="e#339#4281#0" />
+            <element signature="n#value#0" />
+            <element signature="e#4672#5768#0" />
+            <element signature="e#5838#6941#0" />
+            <element signature="e#7042#7770#0" />
+            <element signature="e#7980#8738#0" />
+            <element signature="e#8950#9455#0" />
+            <element signature="e#9659#9762#0" />
+            <element signature="e#10351#10454#0" />
+            <element signature="e#11029#11209#0" />
+            <element signature="e#11390#11491#0" />
+            <element signature="n#!!doc;n#Unexpected#0" />
+            <element signature="n#!!block;n#Unexpected#0" />
+            <element signature="n#!!doc;n#Bool#0;n#!!block;n#Unexpected#0" />
+            <element signature="n#!!doc;n#Unsigned#0;n#!!block;n#Unexpected#0" />
+            <element signature="n#!!doc;n#Signed#0;n#!!block;n#Unexpected#0" />
+            <element signature="n#!!doc;n#Float#0;n#!!block;n#Unexpected#0" />
+            <element signature="n#!!doc;n#Char#0;n#!!block;n#Unexpected#0" />
+            <element signature="n#!!doc;n#Str#0;n#!!block;n#Unexpected#0" />
+            <element signature="n#!!doc;n#Bytes#0;n#!!block;n#Unexpected#0" />
+            <element signature="n#!!doc;n#Unit#0;n#!!block;n#Unexpected#0" />
+            <element signature="n#!!doc;n#Option#0;n#!!block;n#Unexpected#0" />
+            <element signature="n#!!doc;n#NewtypeStruct#0;n#!!block;n#Unexpected#0" />
+            <element signature="n#!!doc;n#Seq#0;n#!!block;n#Unexpected#0" />
+            <element signature="n#!!doc;n#Map#0;n#!!block;n#Unexpected#0" />
+            <element signature="n#!!doc;n#Enum#0;n#!!block;n#Unexpected#0" />
+            <element signature="n#!!doc;n#UnitVariant#0;n#!!block;n#Unexpected#0" />
+            <element signature="n#!!doc;n#NewtypeVariant#0;n#!!block;n#Unexpected#0" />
+            <element signature="n#!!doc;n#TupleVariant#0;n#!!block;n#Unexpected#0" />
+            <element signature="n#!!doc;n#StructVariant#0;n#!!block;n#Unexpected#0" />
+            <element signature="n#!!doc;n#Other#0;n#!!block;n#Unexpected#0" />
+            <element signature="e#14532#15755#0" />
+            <element signature="e#14544#14583#0" />
+            <element signature="e#14610#15753#0" />
+            <element signature="e#14665#15747#0" />
+            <element signature="n#!!doc;n#Expected#0" />
+            <element signature="n#!!block;n#Expected#0" />
+            <element signature="n#!!doc;n#fmt#0;n#!!block;n#Expected#0" />
+            <element signature="e#17425#17464#0" />
+            <element signature="e#17539#17649#0" />
+            <element signature="e#17551#17590#0" />
+            <element signature="e#17681#17791#0" />
+            <element signature="e#17693#17732#0" />
+            <element signature="e#17828#17943#0" />
+            <element signature="e#17840#17879#0" />
+            <element signature="n#!!doc;n#Deserialize#0" />
+            <element signature="n#!!block;n#Deserialize#0" />
+            <element signature="n#!!doc;n#deserialize#0;n#!!block;n#Deserialize#0" />
+            <element signature="e#19930#19947#0" />
+            <element signature="n#!!doc;n#deserialize_in_place#0;n#!!block;n#Deserialize#0" />
+            <element signature="e#21063#21098#0" />
+            <element signature="n#!!block;n#deserialize_in_place#0;n#!!block;n#Deserialize#0" />
+            <element signature="n#!!doc;n#DeserializeOwned#0" />
+            <element signature="n#!!block;n#DeserializeOwned#0" />
+            <element signature="e#22411#22413#0" />
+            <element signature="n#!!doc;n#DeserializeSeed#0" />
+            <element signature="n#!!block;n#DeserializeSeed#0" />
+            <element signature="n#!!doc;n#Value#0;n#!!block;n#DeserializeSeed#0" />
+            <element signature="n#!!doc;n#deserialize#0;n#!!block;n#DeserializeSeed#0" />
+            <element signature="e#28366#28389#0" />
+            <element signature="e#28550#28745#0" />
+            <element signature="e#28608#28631#0" />
+            <element signature="n#!!doc;n#Deserializer#0" />
+            <element signature="n#!!doc;n#Error#0;n#!!block;n#Deserializer#0" />
+            <element signature="n#!!doc;n#deserialize_any#0;n#!!block;n#Deserializer#0" />
+            <element signature="e#34610#34628#0" />
+            <element signature="n#!!doc;n#deserialize_bool#0;n#!!block;n#Deserializer#0" />
+            <element signature="e#34794#34812#0" />
+            <element signature="n#!!doc;n#deserialize_i8#0;n#!!block;n#Deserializer#0" />
+            <element signature="e#34975#34993#0" />
+            <element signature="n#!!doc;n#deserialize_i16#0;n#!!block;n#Deserializer#0" />
+            <element signature="e#35158#35176#0" />
+            <element signature="n#!!doc;n#deserialize_i32#0;n#!!block;n#Deserializer#0" />
+            <element signature="e#35341#35359#0" />
+            <element signature="n#!!doc;n#deserialize_i64#0;n#!!block;n#Deserializer#0" />
+            <element signature="e#35524#35542#0" />
+            <element signature="e#35637#36103#0" />
+            <element signature="e#35647#35868#0" />
+            <element signature="n#!!doc;n#deserialize_u8#0;n#!!block;n#Deserializer#0" />
+            <element signature="e#36197#36215#0" />
+            <element signature="n#!!doc;n#deserialize_u16#0;n#!!block;n#Deserializer#0" />
+            <element signature="e#36379#36397#0" />
+            <element signature="n#!!doc;n#deserialize_u32#0;n#!!block;n#Deserializer#0" />
+            <element signature="e#36561#36579#0" />
+            <element signature="n#!!doc;n#deserialize_u64#0;n#!!block;n#Deserializer#0" />
+            <element signature="e#36743#36761#0" />
+            <element signature="e#36856#37322#0" />
+            <element signature="e#36866#37087#0" />
+            <element signature="n#!!doc;n#deserialize_f32#0;n#!!block;n#Deserializer#0" />
+            <element signature="e#37418#37436#0" />
+            <element signature="n#!!doc;n#deserialize_f64#0;n#!!block;n#Deserializer#0" />
+            <element signature="e#37600#37618#0" />
+            <element signature="n#!!doc;n#deserialize_char#0;n#!!block;n#Deserializer#0" />
+            <element signature="e#37784#37802#0" />
+            <element signature="n#!!doc;n#deserialize_str#0;n#!!block;n#Deserializer#0" />
+            <element signature="e#38250#38268#0" />
+            <element signature="n#!!doc;n#deserialize_string#0;n#!!block;n#Deserializer#0" />
+            <element signature="e#38716#38734#0" />
+            <element signature="n#!!doc;n#deserialize_bytes#0;n#!!block;n#Deserializer#0" />
+            <element signature="e#39184#39202#0" />
+            <element signature="n#!!doc;n#deserialize_byte_buf#0;n#!!block;n#Deserializer#0" />
+            <element signature="e#39653#39671#0" />
+            <element signature="n#!!doc;n#deserialize_option#0;n#!!block;n#Deserializer#0" />
+            <element signature="e#40028#40046#0" />
+            <element signature="n#!!doc;n#deserialize_unit#0;n#!!block;n#Deserializer#0" />
+            <element signature="e#40210#40228#0" />
+            <element signature="n#!!doc;n#deserialize_unit_struct#0;n#!!block;n#Deserializer#0" />
+            <element signature="e#40431#40500#0" />
+            <element signature="n#!!doc;n#deserialize_newtype_struct#0;n#!!block;n#Deserializer#0" />
+            <element signature="e#40709#40778#0" />
+            <element signature="n#!!doc;n#deserialize_seq#0;n#!!block;n#Deserializer#0" />
+            <element signature="e#40949#40967#0" />
+            <element signature="n#!!doc;n#deserialize_tuple#0;n#!!block;n#Deserializer#0" />
+            <element signature="e#41223#41253#0" />
+            <element signature="n#!!doc;n#deserialize_tuple_struct#0;n#!!block;n#Deserializer#0" />
+            <element signature="e#41479#41568#0" />
+            <element signature="e#41743#41761#0" />
+            <element signature="n#!!doc;n#deserialize_enum#0;n#!!block;n#Deserializer#0" />
+            <element signature="e#42293#42405#0" />
+            <element signature="n#!!doc;n#deserialize_identifier#0;n#!!block;n#Deserializer#0" />
+            <element signature="n#!!doc;n#deserialize_ignored_any#0;n#!!block;n#Deserializer#0" />
+            <element signature="e#42973#42991#0" />
+            <element signature="n#!!doc;n#is_human_readable#0;n#!!block;n#Deserializer#0" />
+            <element signature="n#!!doc;n#Visitor#0" />
+            <element signature="n#!!block;n#Visitor#0" />
+            <element signature="n#!!doc;n#Value#0;n#!!block;n#Visitor#0" />
+            <element signature="n#!!doc;n#expecting#0;n#!!block;n#Visitor#0" />
+            <element signature="e#47942#47981#0" />
+            <element signature="n#!!doc;n#visit_bool#0;n#!!block;n#Visitor#0" />
+            <element signature="e#48125#48140#0" />
+            <element signature="n#!!doc;n#visit_i8#0;n#!!block;n#Visitor#0" />
+            <element signature="e#48442#48455#0" />
+            <element signature="n#!!doc;n#visit_i16#0;n#!!block;n#Visitor#0" />
+            <element signature="e#48731#48745#0" />
+            <element signature="n#!!doc;n#visit_i32#0;n#!!block;n#Visitor#0" />
+            <element signature="e#49021#49035#0" />
+            <element signature="n#!!doc;n#visit_i64#0;n#!!block;n#Visitor#0" />
+            <element signature="e#49260#49274#0" />
+            <element signature="e#49430#49846#0" />
+            <element signature="e#49440#49624#0" />
+            <element signature="n#!!doc;n#visit_u8#0;n#!!block;n#Visitor#0" />
+            <element signature="e#50020#50033#0" />
+            <element signature="n#!!doc;n#visit_u16#0;n#!!block;n#Visitor#0" />
+            <element signature="e#50308#50322#0" />
+            <element signature="n#!!doc;n#visit_u32#0;n#!!block;n#Visitor#0" />
+            <element signature="e#50597#50611#0" />
+            <element signature="n#!!doc;n#visit_u64#0;n#!!block;n#Visitor#0" />
+            <element signature="e#50835#50849#0" />
+            <element signature="e#51007#51423#0" />
+            <element signature="e#51017#51201#0" />
+            <element signature="n#!!doc;n#visit_f32#0;n#!!block;n#Visitor#0" />
+            <element signature="e#51600#51614#0" />
+            <element signature="n#!!doc;n#visit_f64#0;n#!!block;n#Visitor#0" />
+            <element signature="e#51839#51853#0" />
+            <element signature="n#!!doc;n#visit_char#0;n#!!block;n#Visitor#0" />
+            <element signature="e#52207#52222#0" />
+            <element signature="n#!!doc;n#visit_str#0;n#!!block;n#Visitor#0" />
+            <element signature="e#53012#53027#0" />
+            <element signature="n#!!doc;n#visit_borrowed_str#0;n#!!block;n#Visitor#0" />
+            <element signature="e#53626#53645#0" />
+            <element signature="n#!!doc;n#visit_string#0;n#!!block;n#Visitor#0" />
+            <element signature="e#54627#54644#0" />
+            <element signature="n#!!doc;n#visit_bytes#0;n#!!block;n#Visitor#0" />
+            <element signature="e#55433#55449#0" />
+            <element signature="n#!!block;n#visit_bytes#0;n#!!block;n#Visitor#0" />
+            <element signature="n#!!doc;n#visit_borrowed_bytes#0;n#!!block;n#Visitor#0" />
+            <element signature="e#56047#56067#0" />
+            <element signature="n#!!doc;n#visit_byte_buf#0;n#!!block;n#Visitor#0" />
+            <element signature="e#57074#57092#0" />
+            <element signature="n#!!doc;n#visit_none#0;n#!!block;n#Visitor#0" />
+            <element signature="n#!!doc;n#visit_some#0;n#!!block;n#Visitor#0" />
+            <element signature="e#57610#57633#0" />
+            <element signature="n#!!block;n#visit_some#0;n#!!block;n#Visitor#0" />
+            <element signature="n#!!doc;n#visit_unit#0;n#!!block;n#Visitor#0" />
+            <element signature="n#!!doc;n#visit_newtype_struct#0;n#!!block;n#Visitor#0" />
+            <element signature="e#58314#58337#0" />
+            <element signature="n#!!block;n#visit_newtype_struct#0;n#!!block;n#Visitor#0" />
+            <element signature="n#!!doc;n#visit_seq#0;n#!!block;n#Visitor#0" />
+            <element signature="e#58659#58673#0" />
+            <element signature="n#!!block;n#visit_seq#0;n#!!block;n#Visitor#0" />
+            <element signature="n#!!doc;n#visit_map#0;n#!!block;n#Visitor#0" />
+            <element signature="e#58966#58980#0" />
+            <element signature="n#!!block;n#visit_map#0;n#!!block;n#Visitor#0" />
+            <element signature="n#!!doc;n#visit_enum#0;n#!!block;n#Visitor#0" />
+            <element signature="e#59266#59281#0" />
+            <element signature="n#!!block;n#visit_enum#0;n#!!block;n#Visitor#0" />
+            <element signature="e#59579#59591#0" />
+            <element signature="n#!!doc;n#SeqAccess#0" />
+            <element signature="n#!!block;n#SeqAccess#0" />
+            <element signature="n#!!doc;n#Error#0;n#!!block;n#SeqAccess#0" />
+            <element signature="n#!!doc;n#next_element_seed#0;n#!!block;n#SeqAccess#0" />
+            <element signature="e#60969#60989#0" />
+            <element signature="n#!!doc;n#next_element#0;n#!!block;n#SeqAccess#0" />
+            <element signature="n#!!doc;n#size_hint#0;n#!!block;n#SeqAccess#0" />
+            <element signature="e#61783#62272#0" />
+            <element signature="e#61854#61874#0" />
+            <element signature="n#!!doc;n#Error#0;n#!!block;n#MapAccess#0" />
+            <element signature="n#!!doc;n#next_key_seed#0;n#!!block;n#MapAccess#0" />
+            <element signature="e#63504#63524#0" />
+            <element signature="n#!!doc;n#next_value_seed#0;n#!!block;n#MapAccess#0" />
+            <element signature="e#63969#63989#0" />
+            <element signature="n#!!doc;n#next_entry_seed#0;n#!!block;n#MapAccess#0" />
+            <element signature="e#64502#64564#0" />
+            <element signature="n#!!block;n#next_entry_seed#0;n#!!block;n#MapAccess#0" />
+            <element signature="e#64746#64930#0" />
+            <element signature="e#64773#64890#1" />
+            <element signature="n#!!doc;n#next_key#0;n#!!block;n#MapAccess#0" />
+            <element signature="n#!!doc;n#next_value#0;n#!!block;n#MapAccess#0" />
+            <element signature="n#!!doc;n#next_entry#0;n#!!block;n#MapAccess#0" />
+            <element signature="n#!!doc;n#size_hint#0;n#!!block;n#MapAccess#0" />
+            <element signature="e#66709#68017#0" />
+            <element signature="e#66776#66796#0" />
+            <element signature="e#66970#66990#0" />
+            <element signature="e#67161#67223#0" />
+            <element signature="n#!!doc;n#EnumAccess#0" />
+            <element signature="n#!!block;n#EnumAccess#0" />
+            <element signature="n#!!doc;n#Error#0;n#!!block;n#EnumAccess#0" />
+            <element signature="n#!!doc;n#Variant#0;n#!!block;n#EnumAccess#0" />
+            <element signature="n#!!doc;n#variant_seed#0;n#!!block;n#EnumAccess#0" />
+            <element signature="e#69396#69411#0" />
+            <element signature="n#!!doc;n#variant#0;n#!!block;n#EnumAccess#0" />
+            <element signature="n#!!doc;n#VariantAccess#0" />
+            <element signature="n#!!block;n#VariantAccess#0" />
+            <element signature="n#!!doc;n#Error#0;n#!!block;n#VariantAccess#0" />
+            <element signature="n#!!doc;n#unit_variant#0;n#!!block;n#VariantAccess#0" />
+            <element signature="n#!!doc;n#newtype_variant_seed#0;n#!!block;n#VariantAccess#0" />
+            <element signature="e#73708#73723#0" />
+            <element signature="n#!!doc;n#newtype_variant#0;n#!!block;n#VariantAccess#0" />
+            <element signature="n#!!doc;n#tuple_variant#0;n#!!block;n#VariantAccess#0" />
+            <element signature="e#75694#75724#0" />
+            <element signature="n#!!doc;n#struct_variant#0;n#!!block;n#VariantAccess#0" />
+            <element signature="e#77295#77377#0" />
+            <element signature="n#!!doc;n#IntoDeserializer#0" />
+            <element signature="n#!!block;n#IntoDeserializer#0" />
+            <element signature="n#!!doc;n#Deserializer#0;n#!!block;n#IntoDeserializer#0" />
+            <element signature="n#!!doc;n#into_deserializer#0;n#!!block;n#IntoDeserializer#0" />
+            <element signature="n#!!doc;n#OneOf#0" />
+            <element signature="n#!!block;n#OneOf#0" />
+            <element signature="e#79073#79742#0" />
+            <element signature="e#79085#79124#0" />
+            <element signature="e#79140#79740#0" />
+            <element signature="e#79173#79734#0" />
+            <element signature="e#79386#79724#1" />
+            <element signature="e#79502#79687#0" />
+            <element signature="e#79533#79611#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rustup/toolchains/1.28.0-x86_64-apple-darwin/lib/rustlib/src/rust/src/liballoc/string.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="2198" column="7" selection-start-line="2198" selection-start-column="7" selection-end-line="2198" selection-end-column="7" />
+          <folding>
+            <element signature="e#65562#65563#0" expanded="true" />
+            <element signature="e#65589#65590#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rustup/toolchains/1.28.0-x86_64-apple-darwin/lib/rustlib/src/rust/src/libcore/convert.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="402" column="7" selection-start-line="402" selection-start-column="7" selection-end-line="402" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_json-1.0.26/src/value/mod.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="1120" column="7" selection-start-line="1120" selection-start-column="7" selection-end-line="1120" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rustup/toolchains/1.28.0-x86_64-apple-darwin/lib/rustlib/src/rust/src/libcore/borrow.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="219" column="7" selection-start-line="219" selection-start-column="7" selection-end-line="219" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rustup/toolchains/1.28.0-x86_64-apple-darwin/lib/rustlib/src/rust/src/libcore/result.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="255" column="9" selection-start-line="255" selection-start-column="9" selection-end-line="255" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="56" column="71" selection-start-line="56" selection-start-column="71" selection-end-line="56" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
