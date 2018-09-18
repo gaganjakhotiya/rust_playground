@@ -4,67 +4,107 @@ extern crate serde_json;
 extern crate serde_derive;
 extern crate serde;
 
-use std::fmt;
 use serde::{
-    de::{Error, MapAccess, Visitor, Unexpected},
+    de::{DeserializeOwned, Error, MapAccess, Unexpected, Visitor},
     Deserialize, Deserializer,
 };
+use std::{fmt, str::FromStr};
 
-#[derive(Clone, Debug, Serialize)]
-struct A {
-    a: Option<i32>,
-    b: Option<String>,
+trait VisitorHelper<'de>: Visitor<'de> {
+    fn get_any<T, D>(&self, key: &str, value: serde_json::Value) -> Result<T, D::Error>
+    where
+        D: MapAccess<'de>,
+        T: DeserializeOwned,
+    {
+        serde_json::from_value::<T>(value.clone()).map_err(|_| {
+            D::Error::invalid_type(
+                Unexpected::Other(format!("value for {}: {:?}", key, value).as_ref()),
+                self,
+            )
+        })
+    }
+
+    fn get_from_str<T, D>(&self, key: &str, value: serde_json::Value) -> Result<Option<T>, D::Error>
+    where
+        D: MapAccess<'de>,
+        T: DeserializeOwned + FromStr,
+    {
+        match serde_json::from_value::<Option<T>>(value.clone()) {
+            Ok(val) => Ok(val),
+            _ => match serde_json::from_value::<String>(value.clone()) {
+                Ok(val) => val
+                    .parse::<T>()
+                    .map(|v| Some(v))
+                    .map_err(|_| D::Error::invalid_type(Unexpected::Str(val.as_ref()), self)),
+                _ => Err(D::Error::invalid_value(
+                    Unexpected::Other(format!("value for {}: {:?}", key, value).as_ref()),
+                    self,
+                )),
+            },
+        }
+    }
 }
 
+#[derive(Clone, Debug, Serialize)]
+struct Galaxy {
+    name: Option<String>,
+    total_stars: Option<i32>,
+}
 
-impl<'de> Deserialize<'de> for A {
+impl<'de> Deserialize<'de> for Galaxy {
     fn deserialize<D>(deserializer: D) -> Result<Self, D::Error>
-        where
-            D: Deserializer<'de>,
+    where
+        D: Deserializer<'de>,
     {
-        struct AVisitor;
+        struct GalaxyVisitor;
 
-        impl<'de> Visitor<'de> for AVisitor {
-            type Value = A;
+        impl<'de> VisitorHelper<'de> for GalaxyVisitor {}
+
+        impl<'de> Visitor<'de> for GalaxyVisitor {
+            type Value = Galaxy;
 
             fn expecting(&self, formatter: &mut fmt::Formatter) -> fmt::Result {
-                formatter.write_str("valid A")
+                formatter.write_str("valid Galaxy")
             }
 
             fn visit_map<D>(self, mut map: D) -> Result<Self::Value, D::Error>
-                where
-                    D: MapAccess<'de>,
+            where
+                D: MapAccess<'de>,
             {
-                let mut a = A { a: None, b: None };
+                let mut galaxy = Galaxy {
+                    name: None,
+                    total_stars: None,
+                };
+
                 while let Some((key, value)) = map.next_entry::<String, serde_json::Value>()? {
                     match &key[..] {
-                        "a" => {
-                            a.a = match serde_json::from_value::<i32>(value.clone()) {
-                                Ok(val) => Some(val),
-                                _ => match serde_json::from_value::<String>(value) {
-                                    Ok(val) => val.parse::<i32>().ok(),
-                                    _ => None
-                                }
-                            };
-                        },
-                        "b" => {
-                            a.b = serde_json::from_value::<String>(value).ok();
+                        "name" => {
+                            galaxy.name =
+                                VisitorHelper::get_any::<Option<String>, D>(&self, "name", value)?;
+                        }
+                        "total_stars" => {
+                            galaxy.total_stars =
+                                VisitorHelper::get_from_str::<i32, D>(&self, "total_stars", value)?;
                         }
                         _ => {}
                     }
                 }
-                Ok(a)
-                // Err(D::Error::invalid_value(Unexpected::Map, &self))
+                Ok(galaxy)
             }
         }
 
-        deserializer.deserialize_struct("A", &["a", "b"], AVisitor)
+        deserializer.deserialize_struct("Galaxy", &["name", "total_stars"], GalaxyVisitor)
     }
 }
 
-
 fn main() {
     println!(
-        "{:?}", serde_json::from_value::<A>(json!({ "a": "12", "b": "abc" }))
+        "{:?}\n{:?}\n{:?}\n{:?}\n{:?}\n{:?}",
+        serde_json::from_value::<Galaxy>(json!({ "total_stars": "3131231", "name": "Backyard" })),
+        serde_json::from_value::<Galaxy>(json!({ "total_stars": 989031213, "name": "Rooftop" })),
+        serde_json::from_value::<Galaxy>(json!({ "name": "Unknown" })),
+        serde_json::from_value::<Galaxy>(json!({ "total_stars": 0 })),
+        serde_json::from_value::<Galaxy>(json!({ "total_stars": "aa" })),
+        serde_json::from_value::<Galaxy>(json!({ "name": 0 })),
     )
 }
