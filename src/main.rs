@@ -3,49 +3,40 @@ extern crate serde_json;
 #[macro_use]
 extern crate serde_derive;
 extern crate serde;
+//#[macro_use]
+extern crate diesel;
 
 use serde::{
-    de::{DeserializeOwned, Error, MapAccess, Unexpected, Visitor},
+    de::{Error, MapAccess, Unexpected, Visitor},
     Deserialize, Deserializer,
 };
-use std::{fmt, str::FromStr};
+use std::fmt;
 
-trait VisitorHelper<'de>: Visitor<'de> {
-    fn get_any<T, D>(&self, key: &str, value: serde_json::Value) -> Result<T, D::Error>
-    where
-        D: MapAccess<'de>,
-        T: DeserializeOwned,
-    {
-        serde_json::from_value::<T>(value.clone()).map_err(|_| {
-            D::Error::invalid_type(
-                Unexpected::Other(format!("value for {}: {:?}", key, value).as_ref()),
-                self,
-            )
-        })
-    }
+//#[macro_use]
+//pub mod macros {
+//    macro_rules! deserialized_struct {
+//        ($name: ident, $($field: ident: $ftype: ty where $parser: ident: $default: expr;)+) => {
+//            #[derive(Queryable, Clone, Debug, Serialize)]
+//            pub struct $name {
+//                pub id: i32,
+//                $(
+//                    __ds_field!($field: $ftype where $parser)
+//                )+
+//            }
+//        };
+//    }
+//
+//    macro_rules! __ds_field {
+//        ($field: ident: $ftype: ty where default) => {
+//            pub $field: $ftype,
+//        };
+//        ($field: ident: $ftype: ty where from_str) => {
+//            pub $field: Option<$ftype>,
+//        };
+//    }
+//}
 
-    fn get_from_str<T, D>(&self, key: &str, value: serde_json::Value) -> Result<Option<T>, D::Error>
-    where
-        D: MapAccess<'de>,
-        T: DeserializeOwned + FromStr,
-    {
-        match serde_json::from_value::<Option<T>>(value.clone()) {
-            Ok(val) => Ok(val),
-            _ => match serde_json::from_value::<String>(value.clone()) {
-                Ok(val) => val
-                    .parse::<T>()
-                    .map(|v| Some(v))
-                    .map_err(|_| D::Error::invalid_type(Unexpected::Str(val.as_ref()), self)),
-                _ => Err(D::Error::invalid_value(
-                    Unexpected::Other(format!("value for {}: {:?}", key, value).as_ref()),
-                    self,
-                )),
-            },
-        }
-    }
-}
-
-#[derive(Clone, Debug, Serialize)]
+#[derive(Clone, Debug, Serialize, PartialEq)]
 struct Galaxy {
     name: Option<String>,
     total_stars: Option<i32>,
@@ -57,8 +48,6 @@ impl<'de> Deserialize<'de> for Galaxy {
         D: Deserializer<'de>,
     {
         struct GalaxyVisitor;
-
-        impl<'de> VisitorHelper<'de> for GalaxyVisitor {}
 
         impl<'de> Visitor<'de> for GalaxyVisitor {
             type Value = Galaxy;
@@ -79,12 +68,33 @@ impl<'de> Deserialize<'de> for Galaxy {
                 while let Some((key, value)) = map.next_entry::<String, serde_json::Value>()? {
                     match &key[..] {
                         "name" => {
-                            galaxy.name =
-                                VisitorHelper::get_any::<Option<String>, D>(&self, "name", value)?;
+                            galaxy.name = serde_json::from_value::<Option<String>>(value.clone())
+                                .map_err(|_| {
+                                    D::Error::invalid_type(
+                                        Unexpected::Other(
+                                            format!("value for {}: {:?}", "name", value).as_ref(),
+                                        ),
+                                        &self,
+                                    )
+                                })?;
                         }
                         "total_stars" => {
-                            galaxy.total_stars =
-                                VisitorHelper::get_from_str::<i32, D>(&self, "total_stars", value)?;
+                            galaxy.total_stars = match serde_json::from_value::<i32>(value.clone())
+                            {
+                                Ok(val) => Ok(val),
+                                _ => match serde_json::from_value::<String>(value.clone()) {
+                                    Ok(val) => val.parse::<i32>().map_err(|_| {
+                                        D::Error::invalid_type(Unexpected::Str(val.as_ref()), &self)
+                                    }),
+                                    _ => Err(D::Error::invalid_value(
+                                        Unexpected::Other(
+                                            format!("value for {}: {:?}", "pincode", value)
+                                                .as_ref(),
+                                        ),
+                                        &self,
+                                    )),
+                                },
+                            }.ok();
                         }
                         _ => {}
                     }
@@ -107,4 +117,26 @@ fn main() {
         serde_json::from_value::<Galaxy>(json!({ "total_stars": "aa" })),
         serde_json::from_value::<Galaxy>(json!({ "name": 0 })),
     )
+}
+
+#[cfg(test)]
+mod tests {
+    use Galaxy;
+    use serde_json;
+
+    #[test]
+    fn galaxy_with_two_stars() {
+        let galaxy = serde_json::from_value::<Galaxy>(json!({ "total_stars": 2 }));
+        let stars = if let Ok(g) = galaxy {
+            g.total_stars
+        } else {
+            None
+        };
+        assert_eq!(stars, Some(2));
+    }
+
+    #[test]
+    fn invalid_galaxy() {
+        assert_eq!(serde_json::from_value::<Galaxy>(json!({ "name": 2 })).ok(), None);
+    }
 }
