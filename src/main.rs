@@ -139,4 +139,9 @@ mod tests {
     fn invalid_galaxy() {
         assert_eq!(serde_json::from_value::<Galaxy>(json!({ "name": 2 })).ok(), None);
     }
+
+    #[test]
+    fn valid_galaxy() {
+        assert_eq!(serde_json::from_value::<Galaxy>(json!({ "name": "Andromeda" })).ok().unwrap().name, Some("Andromeda".to_string()));
+    }
 }
