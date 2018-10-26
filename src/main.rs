@@ -3,7 +3,7 @@ extern crate serde_json;
 #[macro_use]
 extern crate serde_derive;
 extern crate serde;
-//#[macro_use]
+#[macro_use]
 extern crate diesel;
 
 use serde::{
@@ -12,29 +12,35 @@ use serde::{
 };
 use std::fmt;
 
-//#[macro_use]
-//pub mod macros {
-//    macro_rules! deserialized_struct {
-//        ($name: ident, $($field: ident: $ftype: ty where $parser: ident: $default: expr;)+) => {
-//            #[derive(Queryable, Clone, Debug, Serialize)]
-//            pub struct $name {
-//                pub id: i32,
-//                $(
-//                    __ds_field!($field: $ftype where $parser)
-//                )+
-//            }
-//        };
-//    }
-//
-//    macro_rules! __ds_field {
-//        ($field: ident: $ftype: ty where default) => {
-//            pub $field: $ftype,
-//        };
-//        ($field: ident: $ftype: ty where from_str) => {
-//            pub $field: Option<$ftype>,
-//        };
-//    }
-//}
+#[macro_use]
+pub mod macros {
+    macro_rules! deserialized_struct {
+        ($name: ident, $($field: ident: $ftype: ty where $parser: ident: $default: expr;)+) => {
+            #[derive(Queryable, Clone, Debug, Serialize)]
+            pub struct $name {
+                pub id: i32,
+                $(
+                    __ds_field!($field: $ftype where $parser)
+                )+
+            }
+        };
+    }
+
+    macro_rules! __ds_field {
+        ($field: ident: $ftype: ty where default) => {
+            pub $field: $ftype,
+        };
+        ($field: ident: $ftype: ty where from_str) => {
+            pub $field: Option<$ftype>,
+        };
+    }
+}
+
+deserialized_struct! {
+    GalaxyAuto,
+    name: Option<String> where default: None;
+    total_stars: Option<i32> where from_str: None;
+}
 
 #[derive(Clone, Debug, Serialize, PartialEq)]
 struct Galaxy {
