@@ -1,0 +1,10 @@
+os: osx
+language: rust
+rust:
+  - nightly-2018-06-20-x86_64-apple-darwin
+cache: cargo
+script:
+  - cargo build --verbose --all
+  - cargo test --verbose --all
+env:
+  - RUST_BACKTRACE=full
